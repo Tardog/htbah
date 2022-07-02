@@ -3,9 +3,9 @@
   "title": "How to be a Hero",
   "description": "How to be a Hero - das Regelwerk deiner Wahl. Wir stehen für Einsteigerfreundlichkeit, Einfachheit und Freiheit.",
   "author": "Julian edited by Alucard2112",
-  "version": 0.01,
-  "minimumCoreVersion": "0.9.269",
-  "compatibleCoreVersion": "0.9.269",
+  "version": 0.02,
+  "minimumCoreVersion": "9.269",
+  "compatibleCoreVersion": "9.269",
   "scripts": [
     "scripts/config.js",
     "scripts/actor/entity.js",
