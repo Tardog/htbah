@@ -2,12 +2,19 @@
   "name": "htbah",
   "title": "How to be a Hero",
   "description": "How to be a Hero - das Regelwerk deiner Wahl. Wir stehen für Einsteigerfreundlichkeit, Einfachheit und Freiheit.",
-  "author": "Julian",
+  "author": "Julian edited by Me",
   "version": 0.01,
-  "minimumCoreVersion": "0.7.7",
-  "compatibleCoreVersion": "0.7.9",
+  "minimumCoreVersion": "0.9.269",
+  "compatibleCoreVersion": "0.9.269",
+  "scripts": [
+    "scripts/config.js",
+    "scripts/actor/entity.js",
+    "scripts/actor/sheet.js",
+    "scripts/item/sheet.js",
+    "scripts/roll.js"
+  ],
   "esmodules": [
-    "modules/main.js"
+    "scripts/main.js"
   ],
   "styles": [
     "styles/sheet.css"
@@ -25,16 +32,17 @@
     {
       "lang": "de",
       "name": "Deutsch (German)",
-      "path": "lang/de.json"
+      "path": "packs/lang/de.json"
     }
   ],
+  "socket": false,
   "gridDistance": 1,
   "gridUnits": "m",
   "initiative": "1d10 + @action.points",
-  "primaryTokenAttribute": "health",
+  "primaryTokenAttribute": "resources.health",
   "secondaryTokenAttribute": null,
-  "url": "https://github.com/julr/htbah",
-  "manifest": "https://raw.githubusercontent.com/julr/htbah/main/system.json",
-  "download": "https://github.com/julr/htbah/archive/main.zip",
+  "url": "https://github.com/Alucard2112/htbah",
+  "manifest": "https://raw.githubusercontent.com/Alucard2112/htbah/main/system.json",
+  "download": "https://github.com/Alucard2112/htbah/archive/refs/heads/main.zip",
   "license": "License.txt"
 }
