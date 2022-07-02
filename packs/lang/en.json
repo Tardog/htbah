@@ -1,0 +1,90 @@
+{
+  "htbah": {
+    "general" : {
+      "diceAbbrev": "D",
+      "diceModifier": "Dice modifier",
+
+      "ok": "Ok",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "edit": "Edit",
+      "unknown": "unknown",
+
+      "checkMessage": "<b>{name}</b> probes <i>{skill}</i>:",
+      "success": "<b>Success!</b>",
+      "failure": "<b>Failure!</b>",
+      "fatalSuccess": "<b>Critical success!</b>",
+      "fatalFailure": "<b>Fatal failure!</b>",
+
+      "setMaxHp": "Set maximum HP"
+    },
+
+    "sheet": {
+      "general": {
+        "name": "Name",
+        "description": "Description",
+        "count": "Count",
+        "health": "Health Points",
+        "points": "Points",
+        "action": "Action",
+        "knowledge": "Knowledge",
+        "social": "Social Skills"
+      },
+
+      "actor": {
+        "gender": "Gender",
+        "age": "Age",
+        "physique": "Physique",
+        "religion": "Religion",
+        "job": "Job",
+        "maritalStatus": "Marital Status",
+        "selectTokenImage": "Select Image for Token",
+
+        "skills": "Skills",
+        "inventory": "Inventory",
+        "bio": "Biography",
+
+        "noItems": "There are no items",
+
+        "attackWith": "Attack with",
+        "defendWith": "Defend with",
+
+        "checkAgainst": "Check against",
+        "newSkill": "New Skill",
+        "spentSkillPoints": "Skill Points spent",
+
+        "initiative": "Initiative",
+        "attack": "Attack",
+        "defend": "Defend"
+      },
+
+      "item": {
+        "damage": "Damage",
+        "defense": "Defense (Bonus/Malus)",
+        "category": "Category",
+        "toggleStack": "Toggle stack"
+      }
+    },
+
+    "settings": {
+      "heroStyle": {
+        "name": "Hero Style",
+        "hint": "Use Hero Style for Character Sheet"
+      },
+      "totalSkillPoints": {
+        "name": "Show used Skill Points",
+        "hint": "Shows the number of used Skill Points within the Character Sheet"
+      }
+    }
+  },
+
+  "ACTOR.TypePc": "Player Character",
+  "ACTOR.TypeNpc": "Non Player Character",
+  "ACTOR.TypeCreature": "Creature",
+
+  "ITEM.TypeSimple": "General",
+  "ITEM.TypeEquipment": "Equipment",
+  "ITEM.TypeSkill": "Skill",
+
+  "SETTINGS.None": "No setting found"
+}

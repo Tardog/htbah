@@ -33,6 +33,11 @@
       "lang": "de",
       "name": "Deutsch (German)",
       "path": "packs/lang/de.json"
+    },
+    {
+      "lang": "en",
+      "name": "English (English)",
+      "path": "packs/lang/en.json"
     }
   ],
   "socket": false,
