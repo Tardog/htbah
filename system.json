@@ -27,8 +27,8 @@
   ],
   "packs": [
     {
-      "name": "rules",
-      "label": "Regelwerk",
+      "name": "htbah_rules",
+      "label": "HTBAH Regelwerk",
       "system": "htbah",
       "type": "JournalEntry",
       "path": "packs/rules.db"
