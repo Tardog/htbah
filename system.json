@@ -30,8 +30,8 @@
       "name": "rules",
       "label": "Regelwerk",
       "system": "htbah",
-      "path": "packs/rules.db",
-      "entity": "JournalEntry"
+      "type": "JournalEntry",
+      "path": "packs/rules.db"
     }
   ],
   "languages": [
