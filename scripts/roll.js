@@ -3,7 +3,7 @@ export function normalRoll(formula, rollData, text, user, speaker, modifier = "0
         formula = formula.replace("mod", modifier);
     }
     let r = new Roll(formula, rollData);
-    r.roll().toMessage({
+    r.roll({ async: false }).toMessage({
         user: user,
         speaker: ChatMessage.getSpeaker({ actor: speaker }),
         flavor: text
@@ -17,7 +17,7 @@ export function checkRoll(checkAgainst, checkName, user, actor = null, modifier 
     const fatalSuccess = (target < 10) ? 1 : Math.round(target / 10);
     const fatalFailure = (target > 100) ? 100 : 90 + fatalSuccess;
 
-    let r = new Roll("1d100").roll({ async: false});
+    let r = new Roll("1d100").roll({ async: false });
     let fatal = false;
     let success = false;
 
