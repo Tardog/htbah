@@ -17,7 +17,7 @@ export function checkRoll(checkAgainst, checkName, user, actor = null, modifier 
     const fatalSuccess = (target < 10) ? 1 : Math.round(target / 10);
     const fatalFailure = (target > 100) ? 100 : 90 + fatalSuccess;
 
-    let r = new Roll("1d100").roll();
+    let r = new Roll("1d100").roll({ async: false});
     let fatal = false;
     let success = false;
 
