@@ -8,7 +8,7 @@ export default class HTBAHActorSheet extends ActorSheet {
             classes: ["htbah", "sheet", "actor"],
             width: 600,
             height: 700,
-            tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-content", initial: "biography" }],
+            tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-content", initial: "skills" }],
             scrollY: [".biography", ".items", ".skills"],
         });
     }
@@ -236,9 +236,9 @@ export default class HTBAHActorSheet extends ActorSheet {
                 if(this.actor.isToken) {
                     return this.actor.token.update({["img"] : path});
                 } else { //actual actor and possibly linked token
-                    this.actor.update({ 
+                    this.actor.update({
                         ["img"] : path,
-                        ["token.img"] : path 
+                        ["token.img"] : path
                     });
 
                     for (const obj of Object.values(this.actor.apps)) {
@@ -267,11 +267,11 @@ export default class HTBAHActorSheet extends ActorSheet {
                         const newMax = parseInt(html.find('#value').val());
                         if (!isNaN(newMax)){
                             const currentHealth = this.actor.data.data.health.value;
-                            //Set hp of actor to new max if max is less than old hp or if hp == old max (assumes that it is a new/untouched actor) 
+                            //Set hp of actor to new max if max is less than old hp or if hp == old max (assumes that it is a new/untouched actor)
                             const newHealth = ((newMax > currentHealth) || (currentMax == currentHealth)) ? newMax : currentHealth;
-                            this.actor.update({ 
+                            this.actor.update({
                                 ["data.health.value"] : newHealth,
-                                ["data.health.max"] : newMax 
+                                ["data.health.max"] : newMax
                             });
                         }
                     }
